@@ -10,5 +10,11 @@ fun main() {
         count--
     }
 
+    val number = 2
+    for (i in 1..10) {
+        //String Templating
+        println("$number x $i = ${number * i}")
+    }
+
 
 }
