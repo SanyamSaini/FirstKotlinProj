@@ -8,6 +8,13 @@ fun main() {
     println(fn(2.0, 4.0))
 
     calculator(5.0, 5.0, ::sum)
+
+    val lambda1 = { x: Double, y: Double -> x + y }
+    val multiLineLambda = {
+        println("Hello Lambda")
+        val a = 2 + 3
+        "Hello CheezyCode"
+    }
 }
 
 fun sum(a: Double, b: Double): Double {
