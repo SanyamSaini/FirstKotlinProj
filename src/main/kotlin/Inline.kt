@@ -1,0 +1,17 @@
+fun main() {
+    calculateTimeAndRun { loop(1000000) }
+}
+
+inline fun calculateTimeAndRun(fn: () -> Unit) {
+    val start = System.currentTimeMillis()
+    fn()
+    val end = System.currentTimeMillis()
+    println("Time taken - ${end - start}ms")
+
+}
+
+fun loop(n: Long) {
+    for (n in 1..n) {
+        //
+    }
+}
